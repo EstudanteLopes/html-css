@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            margin: 0px;
+            background-color: #091540;
+        }
+
+        header {
+            background-color: lightgray;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        header > h1 {
+            padding-left: 20px;
+            text-decoration: none;
+            color: #091540;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        nav{
+            background-color: #303030;
+            padding: 3px;
+            text-align: right;
+            box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.481);
+            border-radius: 5px;
+            /* padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 20px; */
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            text-align: right;
+            margin-right: 15px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            
+        }
+
+        main {
+            background-color: rgba(255, 255, 255, 0.888);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.655);
+        }
+
+        #assuntos{
+            padding-bottom: 20px ;
+            padding-top: 10px;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+        }
+
+        #assuntos a{
+            text-decoration: none;
+            color: darkblue;
+            font-weight: bold;
+            text-align: center;
+            margin-right: 60px;
+        }
+
+        #assuntos a:hover {
+            text-decoration: underline;
+        }
+        article {
+            background-color: lightgray;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: justify;
+            padding-left: 5px;
+            padding-right: 5px;
+            border-radius: 10px;
+        }
+
+        article > aside {
+            background-color: rgb(113, 113, 113);
+            padding: -5px;
+            text-align: left;
+            margin-top: 5px;
+        }
+        
+        footer {
+          background-color: black;
+          color: white;
+          text-align: center;
+          padding: 5px;
+          
+        }
+
+        footer > p {
+            margin: 0;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>New site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <a href="#">Esportes</a>
+             <a href="#">Politica</a>
+              <a href="#">Tecnologia</a>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias do Brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio impedit cumque quis assumenda at
+                    id repudiandae adipisci, voluptatum aut natus quidem possimus quasi iste autem molestiae numquam
+                    aspernatur facere perferendis.</p>
+                <aside>
+                    <p id="escrito">Artigo escrito por horus</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Dev Horus</p>
+    </footer>
+</body>
+
+</html>
